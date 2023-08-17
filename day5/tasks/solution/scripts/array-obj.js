@@ -20,12 +20,12 @@ document.write(
 );
 document.write(
   `<h2 style="color:#A2baa3">Your values after being sorted descending: <span style="color:black"> ${nums
-    .sort()
+    .sort((a, b) => a - b)
     .reverse()
     .join(",")}</span> <h2>`
 );
 document.write(
   `<h2 style="color:#A2baa3">Your values after being sorted ascending: <span style="color:black"> ${nums
-    .sort()
+    .sort((a, b) => a - b)
     .join(",")}</span> <h2>`
 );
